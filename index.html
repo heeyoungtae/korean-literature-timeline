@@ -258,7 +258,7 @@
             border-bottom: 1px solid #4a3a5a;
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 600px) {
             .events-row {
                 grid-template-columns: 1fr;
                 gap: 2rem;
@@ -268,13 +268,20 @@
                 left: 2rem;
             }
 
+            .timeline-headers {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-header-history,
+            .timeline-header-literature {
+                text-align: left;
+                padding-left: 4rem;
+                padding-right: 1rem;
+            }
+
             .year {
                 left: 2rem;
                 transform: none;
-            }
-
-            .year::before {
-                left: 0;
             }
 
             .history-column,
@@ -282,10 +289,6 @@
                 text-align: left;
                 padding-left: 4rem;
                 padding-right: 1rem;
-            }
-
-            .column-header {
-                text-align: left !important;
             }
 
         }
