@@ -259,36 +259,26 @@
         }
 
         @media (max-width: 600px) {
+            body {
+                padding: 2rem 1rem;
+            }
+
             .events-row {
-                grid-template-columns: 1fr;
                 gap: 2rem;
-            }
-
-            .timeline::before {
-                left: 2rem;
-            }
-
-            .timeline-headers {
-                grid-template-columns: 1fr;
-            }
-
-            .timeline-header-history,
-            .timeline-header-literature {
-                text-align: left;
-                padding-left: 4rem;
-                padding-right: 1rem;
-            }
-
-            .year {
-                left: 2rem;
-                transform: none;
             }
 
             .history-column,
             .literature-column {
-                text-align: left;
-                padding-left: 4rem;
+                padding-left: 1rem;
                 padding-right: 1rem;
+            }
+
+            .timeline-header-history {
+                padding-right: 1rem;
+            }
+
+            .timeline-header-literature {
+                padding-left: 1rem;
             }
 
         }
